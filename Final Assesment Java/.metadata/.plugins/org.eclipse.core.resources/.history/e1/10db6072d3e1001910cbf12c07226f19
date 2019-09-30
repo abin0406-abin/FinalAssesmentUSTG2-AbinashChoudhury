@@ -1,0 +1,36 @@
+package com.dev.assesment;
+
+import java.util.HashSet;
+
+public class ContactCrud implements ContactMethod {
+	static HashSet<long no> hs = new HashSet<long no>();
+	public static void main(String[] args) {
+		
+	}
+
+	@Override
+	public boolean addContact(long number) {
+		if(no != 0) {
+			return true;
+		}
+		return false;
+	}
+
+	@Override
+	public boolean removeContact() {
+		boolean rc = 
+		return false;
+	}
+
+	@Override
+	public long editContact(long number) {
+		
+	}
+
+	@Override
+	public void showAllContact() {
+		System.out.println(hs);
+	}
+	
+
+}

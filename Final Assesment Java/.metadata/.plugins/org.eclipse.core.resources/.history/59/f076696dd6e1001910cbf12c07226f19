@@ -1,0 +1,8 @@
+package com.dev.assesment;
+
+public interface ContactMethod {
+	public boolean addContact();
+	public boolean removeContact();
+	public long editContact(long number);
+	public void showAllContact();
+}

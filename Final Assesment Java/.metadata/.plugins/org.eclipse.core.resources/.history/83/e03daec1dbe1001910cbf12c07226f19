@@ -1,0 +1,77 @@
+package com.dev.assesment;
+
+import java.util.Scanner;
+
+public class Operation {
+	static ContactCrud cc = new ContactCrud();
+	public static void main(String[] args) {
+//		Contact cd = new Contact();
+//		cd.setName("ABC");
+//		cd.setNumber(4587451211l);
+//		cd.setGroup("HOME");
+//		
+//		Contact cd1 = new Contact();
+//		cd1.setName("XYZ");
+//		cd1.setNumber(9876451211l);
+//		cd1.setGroup("WORK");
+//		
+//		Contact cd2 = new Contact();
+//		cd2.setName("PQRS");
+//		cd2.setNumber(7006451211l);
+//		cd2.setGroup("FUN");
+//		
+//		boolean b = cc.addContact(cd);
+//		boolean b1 = cc.addContact(cd1);
+//		boolean b2 = cc.addContact(cd2);
+//		System.out.println(b+" "+b1+" "+b2);
+//		cc.showAllContact();
+//		
+//		boolean r = cc.removeContact(cd);
+//		System.out.println(r);
+//		cc.showAllContact();
+//
+//		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the Value to start any operation: ");
+		int i = sc.nextInt();
+		if (i == 1) {
+			cc.showAllContact();
+		}
+		else if (i == 2) {
+			int j = sc.nextInt();
+			if (j == 1) {
+				System.out.println("CALLING");
+			}
+			else if (j == 2) {
+				System.out.println("MESSAGING");
+			}
+			else if (j == 3) {	
+				System.out.println("GO to main Menu.");
+			}
+		}
+		else if (i == 3) {
+			int k = sc.nextInt();
+			if (k == 1) {
+				System.out.print("Enter the Name: ");
+				String name = sc.nextLine();
+				System.out.print("Enter the Number: ");
+				long number = sc.nextLong();
+				System.out.print("Enter the Group: ");
+				String group = sc.nextLine();
+				
+				Contact cd = new Contact();
+				cd.setName(name);
+				cd.setNumber(number);
+				cd.setGroup(group);
+
+				cc.addContact(Contact number);
+			}
+			else if (i == 2) {
+				cc.removeContact(Contact number);
+			}
+//			else if (i == 3) {
+//				cc.editContact(Contact number);
+//			}
+		}
+	}
+}

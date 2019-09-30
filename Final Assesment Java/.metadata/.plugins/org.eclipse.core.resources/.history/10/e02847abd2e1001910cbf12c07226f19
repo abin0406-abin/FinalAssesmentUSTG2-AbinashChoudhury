@@ -1,0 +1,9 @@
+package com.dev.assesment;
+
+public class ContactCrud {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

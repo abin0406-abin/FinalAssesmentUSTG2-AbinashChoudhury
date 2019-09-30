@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="col-md-6 mt-3 offset-3">
+        <form action="" method="post" role="form" #taskForm='ngForm' (ngSubmit)='printForm(taskForm)'>
+            <div class="form-group">
+                <input type="text" name="task" id="" placeholder="Add Task...!" class="form-control" #username='ngModel'
+                    ngModel>
+            </div>
+            <div class="button-group offset-10">
+                <button class="btn btn-outline-primary">Add Task</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <div class="col-md-6 mt-2 offset-3">
+        <table class="table table-bordered">
+            <tbody>
+                <tr *ngFor='let a of tasks; index as i'>
+                    <td>{{a.task}}</td>
+                    <td><button class="btn btn-outline-danger" (click)='deleteTask(task)'>DELETE</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

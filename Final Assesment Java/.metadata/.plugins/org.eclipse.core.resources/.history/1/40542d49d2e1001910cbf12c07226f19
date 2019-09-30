@@ -1,0 +1,30 @@
+package com.dev.assesment;
+
+public class ContactDetails {
+	private String name;
+	private long mobile;
+	private String group;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public long getMobile() {
+		return mobile;
+	}
+	public void setMobile(long mobile) {
+		this.mobile = mobile;
+	}
+	public String getGroup() {
+		return group;
+	}
+	public void setGroup(String group) {
+		this.group = group;
+	}
+	@Override
+	public String toString() {
+		return "ContactDetails [name=" + name + ", mobile=" + mobile + ", group=" + group + "]";
+	}
+	
+}

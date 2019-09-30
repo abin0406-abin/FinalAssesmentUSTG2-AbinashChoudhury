@@ -1,0 +1,29 @@
+<div class="container">
+    <table class="table table-bordered col-md-12 mt-3 table-hover">
+        <thead class="thead-dark">
+            <tr class="hoverable">
+                <th>Index</th>
+                <th>Name</th>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Website</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="hoverable" *ngFor='let user of userDetails'>
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.website}}</td>
+                <td>
+                    {{user.address.street}} <br>
+                    {{user.address.suite}} <br>
+                    {{user.address.city}} <br>
+                    {{user.address.zipcode}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

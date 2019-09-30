@@ -1,0 +1,51 @@
+package com.dev.assesment;
+
+import java.util.Scanner;
+
+public class Operation {
+	static ContactCrud cc = new ContactCrud();
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the Value to start any operation: ");
+		int i = sc.nextInt();
+		if (i == 1) {
+			cc.showAllContact();
+		}
+		else if (i == 2) {
+			int j = sc.nextInt();
+			if (j == 1) {
+				System.out.println("CALLING");
+			}
+			else if (j == 2) {
+				System.out.println("MESSAGING");
+			}
+			else if (j == 3) {	
+				System.out.println("GO to main Menu.");
+			}
+		}
+		else if (i == 3) {
+			int k = sc.nextInt();
+			if (k == 1) {
+				System.out.print("Enter the Name: ");
+				String name = sc.nextLine();
+				System.out.print("Enter the Number: ");
+				long number = sc.nextLong();
+				System.out.print("Enter the Group: ");
+				String group = sc.nextLine();
+				
+				ContactDetails cd = new ContactDetails();
+				cd.setName(name);
+				cd.setNumber(number);
+				cd.setGroup(group);
+
+				cd.addContact();
+			}
+			else if (i == 2) {
+				cc.removeContact();
+			}
+			else if (i == 3) {
+				cc.editContact(number);
+			}
+		}
+	}
+}
